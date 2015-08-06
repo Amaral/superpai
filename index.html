@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Super Pai</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script data-main="js/main" src="js/lib/head.load.min.js"></script>
+
+	</head>
+
+	
+	<body>
+
+		<div class="wrapper">
+			<div class="container">
+				<div class="painel">
+					<div class="points">0</div>
+					<div class="shirtsCatchContainer">
+						<div class="shirtsCatch"></div>
+						<div class="shirtsCatch"></div>
+						<div class="shirtsCatch"></div>
+						<div class="shirtsCatch"></div>
+					</div>
+					<div class="shirts"></div>
+				</div>
+				<a href="javascript:void(0)"class="btnJogar"></a>
+				<canvas id="mainCanvas" width="841" height="462" class="game" />
+
+			</div>
+		</div>
+		<script type="text/javascript">
+		
+			head.js('js/lib/jquery.1.7.2.min.js',
+					'js/lib/modernizr.js',
+					'js/lib/easeljs-0.4.2.min.js',
+					'js/lib/tweenjs-0.2.0.min.js',
+					'js/lib/Ease.js',
+					'js/game/PoolObject.js',
+					'js/game/Main.js',
+					'js/lib/greensock/TweenMax.min.js',
+					'js/lib/preloadjs-0.1.0.min.js',
+					'js/lib/soundjs/SoundJS.js',
+					'js/lib/soundjs/HTMLAudioPlugin.js',
+					'js/lib/swfobject.js',
+					'js/lib/soundjs/FlashPlugin.js',
+					'js/game/Preload.js',
+					'js/game/PointsParticle.js',
+					'js/game/Particles.js',
+					'js/game/Char.js',
+					'js/game/Clouds.js',
+					'js/game/Shirts.js',
+					'js/game/Enemies.js',
+					'js/game/Sol.js',
+					'js/game/Itens.js',
+					'js/game/Utils.js',
+					'js/game/Sounds.js',
+					'js/game/Wave.js',
+					'js/game/DOMElements.js');
+
+
+			head.ready(function()
+			{
+				SuperPai.Main.start();
+			});
+		
+		</script>
+	</body>
+</html>

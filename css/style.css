@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'MinecraftiaRegular';
+    src: url('../assets/fonts/minecraftia-webfont.eot');
+    src: url('../assets/fonts/minecraftia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/minecraftia-webfont.woff') format('woff'),
+         url('../assets/fonts/minecraftia-webfont.ttf') format('truetype'),
+         url('../assets/fonts/minecraftia-webfont.svg#MinecraftiaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, div {
+	margin:0;
+	padding: 0px;
+}
+body {
+	background-color:white;
+	margin:0;
+	padding: 0px;
+}
+canvas.game
+{
+	background-color:#00849e;
+}
+.wrapper, .container {
+
+  	width:960px;
+	height:462px;
+}
+.wrapper {
+  	bottom: 50%;
+  	right: 50%;
+  	position:
+  	absolute;
+}
+.container 
+{
+	border:1px solid black;
+  	left: 50%;
+  	position: relative;
+  	top: 50%;
+}
+.painel {
+	position: absolute;
+	width:119px;
+	height:462px;
+	right:0px;
+	background: url("../assets/logosuperpai.png") no-repeat -10px 0px,url("../assets/painel.jpg") no-repeat;
+}
+.painel .shirts {
+	position: absolute;
+	width:48px;
+	height:262px;
+	top:152px;
+	left:38px;
+	background: url("../assets/shirtsPainel.png") no-repeat;
+}
+.painel .shirtsCatchContainer {
+	position: absolute;
+	top:135px;
+	left:23px;
+	width:75px;
+}
+.shirtsCatch {
+	position: relative;
+	width:73px;
+	height:72px;
+	overflow: hidden;
+	background: url("../assets/shirtcatch.png") no-repeat;
+
+	background-size:0%;
+	background-position:50%;
+	-webkit-animation-name: rotate; 
+    -webkit-animation-duration: 5.5s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.points {
+	position: relative;
+	top:100px;
+	text-align: center;
+	font-family: "MinecraftiaRegular";
+	font-size: 15px;
+	color:white;
+}
+a.btnJogar {
+	position: absolute;
+	width: 144px;
+	height: 84px;
+	display: block;
+	background: url("../assets/btnJogar.png") no-repeat;
+}
+a.btnJogar:hover { background-position: -144px 0; }
+
+
+
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to { 
+		-webkit-transform: rotate(360deg);
+	}
+}
